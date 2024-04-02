@@ -1,0 +1,37 @@
+//主輔色
+$main-color: (
+    primary: #0f367a,
+    sub: #ffffff
+);
+
+//漸層
+$linear: (
+    primary: linear-gradient(0deg, #bc9c64 4%, #f3d197 93%)
+);
+
+$border: (
+    main_01: #ffffff,
+    main_02: #ffffff
+);
+
+$font: (
+    font01: #ffffff,
+    font02: #f4d6a1
+);
+
+@mixin input01 {
+    border: 1px solid #daaf6d;
+}
+
+@mixin btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    &.main_blue {
+        background: linear-gradient(to bottom, #0f45a2 4%, map-get($main-color, primary) 100%);
+        color: #ffffff;
+    }
+}
+

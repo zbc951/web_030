@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ZH-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/64x64.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="unlogin">
+    <!--header-->
+    <header>
+        <!--top-->
+        <div class="top">
+            <!--center-->
+            <div class="center">
+                <!-- logo -->
+                <a href="./index.html" class="logo">
+                    <!-- <img src="./img/logo.png" alt="logo"> -->
+                </a>
+                <!--UnLoginBox-->
+                <ul class="UnLoginBox">
+                    <!--帳號密碼-->
+                    <li>
+                        <form action="">
+                            <label for="">
+                                <!-- <i class="account_ic"></i> -->
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="帳號或手機號碼">
+                            </label>
+                            <label for="">
+                                <!-- <i class="password_ic"></i> -->
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" placeholder="密碼">
+                            </label>
+                            <a href="./html/index.html" class="loginBtn main_blue">
+                                <!-- <i class="loginBtn_ic"></i> -->
+                                <p>サインイン</p>
+                            </a>
+                            <a href="javascript:;" class="registerBtn main_blue">
+                                <!-- <i class="registeriBtn_ic"></i> -->
+                                <!-- <i class="fa-solid fa-user"></i> -->
+                                <p>登録済み</p>
+                            </a>
+                        </form>
+                    </li>
+                    <!--忘記密碼-->
+                    <li>
+                        <button class="forgetBtn">
+                            <!-- <i class="forget_ic"></i> -->
+                            <i class="fa-regular fa-circle-question"></i>
+                            <p>忘記密碼</p>
+                        </button>
+                    </li>
+                    <!--語言列-->
+                    <li>
+                        <label for="" class="lang">
+                            <select name="" id="">
+                                <option value="">繁體中文</option>
+                                <option value="">简体中文</option>
+                                <option value="">English</option>
+                                <option value="">日本語</option>
+                            </select>
+                            <!-- <i class="arrow_ic"></i> -->
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--bottom-->
+        <div class="bottom">
+            <!-- center -->
+            <div class="center">
+                <!-- nav -->
+                <nav>
+                    <ul>
+                        <li class="active">
+                            <a href="javascript:;">
+                                <p>人気ゲーム</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <p>スポーツ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <p>ライブ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;l">
+                                <p>スロット</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <p>釣りゲーム</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <p>テーブルゲーム</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <p>プロモーション</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <p>VIPクラブ</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- 下拉式遊戲選單 -->
+        <div class="downList">
+            <ul>
+                <!-- <i class="arrow_ic prev"></i> -->
+                <i class="fa-solid fa-chevron-left"></i>
+                <ol class="sport">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/sport/36588.png">
+                            <p>36588</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/sport/pinnacle.png">
+                            <p>平博體育</p>
+                        </a>
+                    </li>
+                </ol>
+                <ol class="live">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/live/sa.png">
+                            <p>沙龍真人娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/live/allbet.png">
+                            <p>歐博真人娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/live/dg.png">
+                            <p>DG真人娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/live/wm.png">
+                            <p>WM真人娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/live/og.png">
+                            <p>OG真人娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/live/rg.png">
+                            <p>RG真人娛樂</p>
+                        </a>
+                    </li>
+                </ol>
+                <ol class="slot">
+                    <li>
+                        <a href="./slotPageInner.html">
+                            <img src="./img/partner/slot/bng.png">
+                            <p>BNG電子娛樂</p>
+                        </a>
+                        <div class="maintainBox">
+                            <div class="text">
+                                <p class="title">維護中</p>
+                                <P class="start">2022/03/02 下午2:00~</P>
+                                <P class="end">2022/03/02 下午4:00</P>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./slotPageInner.html">
+                            <img src="./img/partner/slot/bwin.png">
+                            <p>必贏電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./slotPageInner.html">
+                            <img src="./img/partner/slot/fa.png">
+                            <p>福星電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./slotPageInner.html">
+                            <img src="./img/partner/slot/gr.png">
+                            <p>好路棋牌</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./slotPageInner.html">
+                            <img src="./img/partner/slot/fungame.png">
+                            <p>FUN GAME</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./slotPageInner.html">
+                            <img src="./img/partner/slot/pls.png">
+                            <p>PLS電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./slotPageInner.html">
+                            <img src="./img/partner/slot/png.png">
+                            <p>PNG電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./slotPageInner.html">
+                            <img src="./img/partner/slot/rsg.png">
+                            <p>RSG電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./slotPageInner.html">
+                            <img src="./img/partner/slot/sp.png">
+                            <p>SimplePlay</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./slotPageInner.html;">
+                            <img src="./img/partner/slot/tpg.png">
+                            <p>TPG電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./slotPageInner.html">
+                            <img src="./img/partner/slot/ufo.png">
+                            <p>UFO電子娛樂</p>
+                        </a>
+                    </li>
+                </ol>
+                <ol class="lottery">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/lottery/sg88.png">
+                            <p>SG88六合、大樂、539</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/lottery/gs.png">
+                            <p>京彩彩票</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/partner/lottery/rwd.png">
+                            <p>白鹿電子娛樂</p>
+                        </a>
+                    </li>
+                </ol>
+                <ol class="fish">
+                    <li>
+                        <a href="./fishPageInner.html">
+                            <img src="./img/partner/fish/bwin.png">
+                            <p>必贏電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fishPageInner.html">
+                            <img src="./img/partner/fish/fa.png">
+                            <p>福星電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fishPageInner.html">
+                            <img src="./img/partner/fish/gr.png">
+                            <p>好路棋牌</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fishPageInner.html">
+                            <img src="./img/partner/fish/rsg.png">
+                            <p>RSG電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fishPageInner.html">
+                            <img src="./img/partner/fish/sp.png">
+                            <p>SimplePlay</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fishPageInner.html">
+                            <img src="./img/partner/fish/tpg.png">
+                            <p>TPG電子娛樂</p>
+                        </a>
+                    </li>
+                </ol>
+                <ol class="board">
+                    <li>
+                        <a href="./boardPageInner.html">
+                            <img src="./img/partner/board/bts.png">
+                            <p>BTS電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./boardPageInner.html">
+                            <img src="./img/partner/board/fa.png">
+                            <p>福星電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./boardPageInner.html">
+                            <img src="./img/partner/board/gr.png">
+                            <p>好路棋牌</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./boardPageInner.html">
+                            <img src="./img/partner/board/fungame.png">
+                            <p>FUN GAME</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./boardPageInner.html">
+                            <img src="./img/partner/board/png.png">
+                            <p>PNG電子娛樂</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./boardPageInner.html">
+                            <img src="./img/partner/board/rwd.png">
+                            <p>白鹿電子娛樂</p>
+                        </a>
+                    </li>
+                </ol>
+                <!-- <i class="arrow_ic next"></i> -->
+                <i class="fa-solid fa-chevron-right"></i>
+            </ul>
+        </div>
+    </header>
+    <main class="home">
+         <!-- banner -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="banner" src="./images/banner.png">
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <!-- <i class="prev_ic"></i> -->
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="swiper-button-next">
+                <!-- <i class="next_ic"></i> -->
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <!-- mainWrap -->
+        <div class="mainWrap">
+            <div class="center">
+                <!-- 跑馬燈 -->
+                <div class="marqueeWrap">
+                    <div class="title">
+                        <!-- <i class="marquee_ic"> -->
+                        <p>最新資訊</p>
+                    </div>
+                    <div class="marquee">
+                        <p>跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈</p>
+                    </div>
+                </div>
+                <!-- 遊戲清單 -->
+                <div class="typeList">
+                    <div class="gameBlock">
+                        <img src="./img/enter/36588.png">
+                        <p>36588體育</p>
+                    </div>
+                    <div class="gameBlock">
+                        <img src="./img/enter/sa.png">
+                        <p>真人沙龍娛樂</p>
+                    </div>
+                    <div class="gameBlock">
+                        <img src="./img/enter/allbet.png">
+                        <p>歐博真人娛樂</p>
+                    </div>
+                    <div class="gameBlock">
+                        <img src="./img/enter/dg.png">
+                        <p>DG真人娛樂</p>
+                    </div>
+                    <div class="gameBlock">
+                        <img src="./img/enter/wm.png">
+                        <p>WM真人娛樂</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 懸浮按鈕 -->
+    <aside class="cs">
+        <i class="csBtn_ic"></i>
+    </aside>
+    <!-- footer -->
+    <footer>
+        <div class="top">
+            <div class="center">
+                <div class="brand">
+                    <p class="title">GAME PROVIDERS</p>
+                    <div class="ag"></div>
+                    <div class="sa"></div>
+                    <div class="dg"></div>
+                    <div class="tpg"></div>
+                    <div class="og"></div>
+                    <div class="sp"></div>
+                    <div class="pg"></div>
+                    <div class="bng"></div>
+                    <div class="ab"></div>
+                    <div class="pls"></div>
+                    <div class="rsg"></div>
+                    <div class="jili"></div>
+                    <div class="nolimit"></div>
+                    <div class="evo"></div>
+                    <div class="bp"></div>
+                    <div class="ftp"></div>
+                    <div class="redtiger"></div>
+                    <div class="ifun"></div>
+                    <div class="redrake"></div>
+                    <div class="wm"></div>
+                    <div class="ygg"></div>
+                    <div class="net"></div>
+                    <div class="pp"></div>
+                    <div class="gh"></div>
+                    <div class="png"></div>
+                    <div class="ely"></div>
+                    <div class="qs"></div>
+                    <div class="atux"></div>
+                    <div class="evoplay"></div>
+                    <div class="sport"></div>
+                </div>
+                <ul class="listBox">
+                    <li class="list">
+                        <p class="title">最新のお知らせ</p>
+                        <ul>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>人気</p>
+                            </li>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>ノーマル</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <p class="title">よくある質問</p>
+                        <ul>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>プロモーション</p>
+                            </li>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>入出金と振替</p>
+                            </li>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>入出金方法</p>
+                            </li>
+                            <li class="unLogin">
+                                <i></i>
+                                <p class="small">登録とアカウント</p>
+                            </li>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>アフィリエイト</p>
+                            </li>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>お問い合わせ</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <p class="title">当社について</p>
+                        <ul>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>当社について</p>
+                            </li>
+                            <li class="unLogin">
+                                <i></i>
+                                <p class="small">プライバシーポリシー</p>
+                            </li>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>利用規約</p>
+                            </li>
+                            <li class="unLogin">
+                                <i></i>
+                                <p class="small">責任あるゲーミング</p>
+                            </li>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>プロモーション</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <p class="title">VIPメンバー</p>
+                        <ul>
+                            <li class="unLogin">
+                                <i></i>
+                                <p>VIPレベル</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="bottom">
+            <li></li>
+        </ul>
+    </footer>
+    <!-- 彈窗 -->
+    <div class="filter">
+        <!-- 忘記密碼 -->
+        <div class="jumpWindow fgPW">
+            <div class="title">
+                <p>忘記密碼</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <input class="inputStyle_1" type="text" placeholder="請輸入您的手機號碼">
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow btnStyle_1">重置密碼</button>
+                <p class="remind">我們將發送新的密碼到您的手機，請查收簡訊</p>
+            </div>
+        </div>
+        <!-- 請先登入 -->
+        <div class="jumpWindow plsLogin">
+            <div class="title">
+                <p>提示</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <p>請先登入</p>
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow btnStyle_1">確認</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</body>
+</html>

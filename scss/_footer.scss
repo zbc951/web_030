@@ -1,0 +1,200 @@
+footer {
+    width: 100%;
+    height: auto;
+
+    .top {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: map-get($main-color, sub);
+        
+        .center {
+            width: 1400px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+
+            .brand {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 20px 0;
+                position: relative;
+
+                &>.title {
+                    color: map-get($font , font02);
+                    font-weight: bold;
+                    position: absolute;
+                    top: 0;
+                    left: 20px;
+                }
+
+                &>div {
+                    margin: 30px 15px 0;
+
+                    &.net {
+                        width: 90px;
+                        height: 46px;
+                    }
+                    &.sa {
+                        width: 100px;
+                        height: 35px;
+                    }
+                    &.dg {
+                        width: 74px;
+                        height: 37px;
+                    }
+                    &.gh {
+                        width: 56px;
+                        height: 39px;
+                    }
+                    &.og {
+                        width: 50px;
+                        height: 43px;
+                    }
+                    &.sp {
+                        width: 120px;
+                        height: 35px;
+                    }
+                    &.jili {
+                        width: 71px;
+                        height: 29px;
+                    }
+                    &.elk {
+                        width: 92px;
+                        height: 36px;
+                    }
+                    &.bp {
+                        width: 137px;
+                        height: 28px;
+                    }
+                    &.evo {
+                        width: 132px;
+                        height: 26px;
+                    }
+                    &.ftp {
+                        width: 135px;
+                        height: 31px;
+                    }
+                    &.bng {
+                        width: 98px;
+                        height: 29px;
+                    }
+                    &.ab {
+                        width: 97px;
+                        height: 32px;
+                    }
+                    &.pls {
+                        width: 167px;
+                        height: 26px;
+                    }
+                    &.rsg {
+                        width: 67px;
+                        height: 39px;
+                    }
+                    &.ag {
+                        width: 106px;
+                        height: 34px;
+                    }
+                    &.tpg {
+                        width: 105px;
+                        height: 34px;
+                    }
+                    &.ely {
+                        width: 132px;
+                        height: 29px;
+                    }
+                    &.qs {
+                        width: 107px;
+                        height: 26px;
+                    }
+                    &.atux {
+                        width: 135px;
+                        height: 33px;
+                    }
+                    &.evoplay {
+                        width: 119px;
+                        height: 20px;
+                    }
+                    &.sport {
+                        width: 94px;
+                        height: 35px;
+                    }
+                    &.pg {
+                        width: 122px;
+                        height: 30px;
+                    }
+                    &.png {
+                        width: 112px;
+                        height: 31px;
+                    }
+                    &.mg {
+                        width: 130px;
+                        height: 32px;
+                    }
+                    &.pp {
+                        width: 93px;
+                        height: 41px;
+                    }
+                    &.redrake {
+                        width: 74px;
+                        height: 46px;
+                    }
+                    &.nolimit {
+                        width: 117px;
+                        height: 32px;
+                    }
+                    &.ifun {
+                        width: 121px;
+                        height: 35px;
+                    }
+                    &.wm {
+                        width: 39px;
+                        height: 40px;
+                    }
+                    &.ygg {
+                        width: 129px;
+                        height: 33px;
+                    }
+                    &.relax {
+                        width: 97px;
+                        height: 31px;
+                    }
+                    &.redtiger {
+                        width: 99px;
+                        height: 42px;
+                    }
+                }
+            }
+
+            .listBox {
+                width: 50%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px 50px;
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        height: 85px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: map-get($main-color, primary);
+
+        p {
+            width: 1400px;
+            text-align: center;
+            line-height: 30px;
+            margin: 0 auto;
+        }
+    }
+}

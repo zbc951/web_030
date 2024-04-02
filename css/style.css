@@ -1,0 +1,1472 @@
+@charset "UTF-8";
+header .top .logo {
+  width: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+header .top .logo::before {
+  content: "LOGO";
+  color: #0f367a;
+  font-size: 30px;
+  margin: auto;
+}
+header .top .logo > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: 100%;
+     object-fit: 100%;
+}
+
+.mainWrap {
+  background: url("../images/bg.png") no-repeat top center;
+  background-size: cover;
+}
+
+footer .twitter {
+  background: url("../images/icon/svg/twitter.svg") no-repeat;
+  background-size: contain;
+}
+
+footer .star {
+  background: url("../images/icon/mainWrap_star.png") no-repeat;
+  background-size: contain;
+}
+
+footer .ag {
+  background: url("../images/partner/footer_partner/ag.png") no-repeat center;
+}
+
+footer .sa {
+  background: url("../images/partner/footer_partner/sa.png") no-repeat center;
+}
+
+footer .dg {
+  background: url("../images/partner/footer_partner/dg.png") no-repeat center;
+}
+
+footer .tpg {
+  background: url("../images/partner/footer_partner/tpg.png") no-repeat center;
+}
+
+footer .og {
+  background: url("../images/partner/footer_partner/og.png") no-repeat center;
+}
+
+footer .sp {
+  background: url("../images/partner/footer_partner/sp.png") no-repeat center;
+}
+
+footer .mg {
+  background: url("../images/partner/footer_partner/mg.png") no-repeat center;
+}
+
+footer .pp {
+  background: url("../images/partner/footer_partner/pp.png") no-repeat center;
+}
+
+footer .gh {
+  background: url("../images/partner/footer_partner/gh.png") no-repeat center;
+}
+
+footer .elk {
+  background: url("../images/partner/footer_partner/elk.png") no-repeat center;
+}
+
+footer .ftp {
+  background: url("../images/partner/footer_partner/ftp.png") no-repeat center;
+}
+
+footer .pg {
+  background: url("../images/partner/footer_partner/pg.png") no-repeat center;
+}
+
+footer .bng {
+  background: url("../images/partner/footer_partner/bng.png") no-repeat center;
+}
+
+footer .ab {
+  background: url("../images/partner/footer_partner/ab.png") no-repeat center;
+}
+
+footer .pls {
+  background: url("../images/partner/footer_partner/pls.png") no-repeat center;
+}
+
+footer .rsg {
+  background: url("../images/partner/footer_partner/rsg.png") no-repeat center;
+}
+
+footer .bp {
+  background: url("../images/partner/footer_partner/bp.png") no-repeat center;
+}
+
+footer .redtiger {
+  background: url("../images/partner/footer_partner/redtiger.png") no-repeat center;
+}
+
+footer .ifun {
+  background: url("../images/partner/footer_partner/ifun.png") no-repeat center;
+}
+
+footer .redrake {
+  background: url("../images/partner/footer_partner/redrake.png") no-repeat center;
+}
+
+footer .ely {
+  background: url("../images/partner/footer_partner/ely.png") no-repeat center;
+}
+
+footer .atux {
+  background: url("../images/partner/footer_partner/atux.png") no-repeat center;
+}
+
+footer .evoplay {
+  background: url("../images/partner/footer_partner/evoplay.png") no-repeat center;
+}
+
+footer .sport {
+  background: url("../images/partner/footer_partner/sport.png") no-repeat center;
+}
+
+footer .png {
+  background: url("../images/partner/footer_partner/png.png") no-repeat center;
+}
+
+footer .relax {
+  background: url("../images/partner/footer_partner/relax.png") no-repeat center;
+}
+
+footer .wm {
+  background: url("../images/partner/footer_partner/wm.png") no-repeat center;
+}
+
+footer .ygg {
+  background: url("../images/partner/footer_partner/ygg.png") no-repeat center;
+}
+
+footer .net {
+  background: url("../images/partner/footer_partner/net.png") no-repeat center;
+}
+
+footer .jili {
+  background: url("../images/partner/footer_partner/jili.png") no-repeat center;
+}
+
+footer .nolimit {
+  background: url("../images/partner/footer_partner/nolimit.png") no-repeat center;
+}
+
+footer .evo {
+  background: url("../images/partner/footer_partner/evo.png") no-repeat center;
+}
+
+footer .qs {
+  background: url("../images/partner/footer_partner/qs.png") no-repeat center;
+}
+
+footer .link::before {
+  background: url("../images/GC-icon.png") no-repeat center;
+  background-size: contain;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  font-family: "微軟正黑體";
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+i {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+img {
+  display: block;
+}
+
+html {
+  overflow-y: overlay;
+}
+html body {
+  position: relative;
+}
+html body header {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+}
+html body header .top,
+html body header .bottom {
+  width: 100%;
+  height: auto;
+}
+html body header .top .center,
+html body header .bottom .center {
+  width: 1400px;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+html body header .top .center .UnLoginBox,
+html body header .bottom .center .UnLoginBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body header .top .center .UnLoginBox li,
+html body header .bottom .center .UnLoginBox li {
+  width: auto;
+  height: 100%;
+}
+html body header .top .center .UnLoginBox li form,
+html body header .bottom .center .UnLoginBox li form {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+}
+html body header .top .center .UnLoginBox li form label,
+html body header .bottom .center .UnLoginBox li form label {
+  width: 150px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+html body header .top .center .UnLoginBox li form label input,
+html body header .bottom .center .UnLoginBox li form label input {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html body header .top .center .UnLoginBox li form label i,
+html body header .bottom .center .UnLoginBox li form label i {
+  margin: 0 5px -2px 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body header .top .center .UnLoginBox li form a,
+html body header .bottom .center .UnLoginBox li form a {
+  width: 102px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+html body header .top .center .UnLoginBox li form a.loginBtn,
+html body header .bottom .center .UnLoginBox li form a.loginBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  font-size: 16px;
+}
+html body header .top .center .UnLoginBox li form a.loginBtn.main_blue,
+html body header .bottom .center .UnLoginBox li form a.loginBtn.main_blue {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #0f45a2), to(#0f367a));
+  background: linear-gradient(to bottom, #0f45a2 4%, #0f367a 100%);
+  color: #ffffff;
+}
+html body header .top .center .UnLoginBox li form a.registerBtn,
+html body header .bottom .center .UnLoginBox li form a.registerBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  font-size: 16px;
+}
+html body header .top .center .UnLoginBox li form a.registerBtn.main_blue,
+html body header .bottom .center .UnLoginBox li form a.registerBtn.main_blue {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #0f45a2), to(#0f367a));
+  background: linear-gradient(to bottom, #0f45a2 4%, #0f367a 100%);
+  color: #ffffff;
+}
+html body header .top .center .UnLoginBox li form a.registerBtn i,
+html body header .bottom .center .UnLoginBox li form a.registerBtn i {
+  margin: 0 5px -2px 0;
+}
+html body header .top .center .UnLoginBox li form a:last-child,
+html body header .bottom .center .UnLoginBox li form a:last-child {
+  margin: 0;
+}
+html body header .top .center .UnLoginBox li .forgetBtn,
+html body header .bottom .center .UnLoginBox li .forgetBtn {
+  width: auto;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+}
+html body header .top .center .UnLoginBox li .forgetBtn i,
+html body header .bottom .center .UnLoginBox li .forgetBtn i {
+  margin: 0 5px -2px 0;
+}
+html body header .top .center .loginBox,
+html body header .bottom .center .loginBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body header .top .center .loginBox li,
+html body header .bottom .center .loginBox li {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html body header .top .center .loginBox li:not(:first-child),
+html body header .bottom .center .loginBox li:not(:first-child) {
+  cursor: pointer;
+}
+html body header .top .center .loginBox li:first-child,
+html body header .bottom .center .loginBox li:first-child {
+  padding: 0 20px;
+}
+html body header .top .center .loginBox li.total,
+html body header .bottom .center .loginBox li.total {
+  padding: 0 20px;
+}
+html body header .top .center .loginBox li a,
+html body header .bottom .center .loginBox li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+html body header .top .center .loginBox li .userName,
+html body header .bottom .center .loginBox li .userName {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html body header .top .center .loginBox li .userName span,
+html body header .bottom .center .loginBox li .userName span {
+  margin-right: 20px;
+}
+html body header .top .center .loginBox li .moneyTotal,
+html body header .bottom .center .loginBox li .moneyTotal {
+  margin-right: 10px;
+}
+html body header .top .center .loginBox li .fa-solid.fa-sort-down,
+html body header .bottom .center .loginBox li .fa-solid.fa-sort-down {
+  margin-bottom: 5px;
+}
+html body header .top .center .loginBox li .fa-solid.fa-chevron-down,
+html body header .bottom .center .loginBox li .fa-solid.fa-chevron-down {
+  margin: 2px 0 0 2px;
+}
+html body header .top .center .loginBox li .transferInfo,
+html body header .bottom .center .loginBox li .transferInfo {
+  display: none;
+  width: 290px;
+  height: auto;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 25;
+}
+html body header .top .center .loginBox li .transferInfo.display,
+html body header .bottom .center .loginBox li .transferInfo.display {
+  display: block;
+}
+html body header .top .center .loginBox li .transferInfo li,
+html body header .bottom .center .loginBox li .transferInfo li {
+  width: 100%;
+  height: auto;
+  border-right: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+html body header .top .center .lang,
+html body header .bottom .center .lang {
+  width: auto;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html body header .top .center .lang select,
+html body header .bottom .center .lang select {
+  width: auto;
+  height: 100%;
+  background: none;
+  padding: 0 35px 0 20px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+html body header .top .center .lang i,
+html body header .bottom .center .lang i {
+  position: absolute;
+  right: 15px;
+}
+html body header .top.bottom,
+html body header .bottom.bottom {
+  height: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(0deg, #bc9c64 4%, #f3d197 93%);
+}
+html body header .top.bottom .center,
+html body header .bottom.bottom .center {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body header .top.bottom .center nav,
+html body header .bottom.bottom .center nav {
+  width: auto;
+  height: 100%;
+}
+html body header .top.bottom .center nav ul,
+html body header .bottom.bottom .center nav ul {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px solid #ffffff;
+}
+html body header .top.bottom .center nav ul li,
+html body header .bottom.bottom .center nav ul li {
+  width: auto;
+  height: 100%;
+  border-left: 1px solid #ffffff;
+  position: relative;
+}
+html body header .top.bottom .center nav ul li::before,
+html body header .bottom.bottom .center nav ul li::before {
+  display: none;
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html body header .top.bottom .center nav ul li:hover::before, html body header .top.bottom .center nav ul li:active::before, html body header .top.bottom .center nav ul li.active::before,
+html body header .bottom.bottom .center nav ul li:hover::before,
+html body header .bottom.bottom .center nav ul li:active::before,
+html body header .bottom.bottom .center nav ul li.active::before {
+  display: block;
+}
+html body header .top.bottom .center nav ul li a,
+html body header .bottom.bottom .center nav ul li a {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+html body header .top {
+  height: 80px;
+}
+html body header .top > .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body header .downList {
+  display: none;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 120px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  z-index: 20;
+}
+html body header .downList.active {
+  display: block;
+  display: none;
+}
+html body header .downList ul {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+html body header .downList ul ol {
+  display: none;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 20px;
+}
+html body header .downList ul ol.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+html body header .downList ul ol li {
+  width: auto;
+  height: auto;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-right: 20px;
+}
+html body header .downList ul ol li:last-child {
+  margin: 0;
+}
+html body header .downList ul ol li p {
+  text-align: center;
+  margin-top: 8px;
+}
+html body header .downList ul ol li .maintainBox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  cursor: not-allowed;
+}
+html body header .downList ul ol li .maintainBox p {
+  text-align: center;
+}
+html body header .downList ul ol li .maintainBox p.title {
+  margin-bottom: 30px;
+}
+html body header .downList ul .fa-solid.fa-chevron-left,
+html body header .downList ul .fa-solid.fa-chevron-right {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0.2;
+}
+html body header .downList ul .fa-solid.fa-chevron-left.active,
+html body header .downList ul .fa-solid.fa-chevron-right.active {
+  pointer-events: visible;
+  opacity: 1;
+}
+html body .mainWrap {
+  width: 100%;
+  height: 921px;
+}
+html body .mainWrap .center {
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+}
+html body .mainWrap .center .marqueeWrap {
+  width: 100%;
+  height: 50px;
+}
+html body .mainWrap .center .typeList {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 20px;
+  padding: 60px 0;
+}
+html body .mainWrap .center .typeList .gameBlock {
+  width: 100%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+html body .mainWrap .center .typeList .gameBlock p {
+  text-align: center;
+  margin-top: 15px;
+}
+html body .mainWrap .center .typeList .gameBlock .maintainBox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  cursor: not-allowed;
+}
+html body .mainWrap .center .typeList .gameBlock .maintainBox p {
+  text-align: center;
+}
+html body .mainWrap .center .typeList .gameBlock .maintainBox p.title {
+  margin-bottom: 30px;
+}
+html body .swiper {
+  width: 100%;
+}
+html body .swiper .swiper-wrapper {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+html body .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: auto;
+}
+html body .swiper .swiper-button-prev,
+html body .swiper .swiper-button-next {
+  width: 285px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+html body .swiper .swiper-button-prev:hover i, html body .swiper .swiper-button-prev:active i, html body .swiper .swiper-button-prev.active i,
+html body .swiper .swiper-button-next:hover i,
+html body .swiper .swiper-button-next:active i,
+html body .swiper .swiper-button-next.active i {
+  opacity: 1;
+}
+html body .swiper .swiper-button-prev::before, html body .swiper .swiper-button-prev::after,
+html body .swiper .swiper-button-next::before,
+html body .swiper .swiper-button-next::after {
+  content: "";
+}
+html body .swiper .swiper-button-prev i,
+html body .swiper .swiper-button-next i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+html body .swiper .swiper-button-prev {
+  left: 0;
+}
+html body .swiper .swiper-button-next {
+  right: 0;
+}
+html body footer {
+  width: 100%;
+  height: auto;
+}
+html body footer .top {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #ffffff;
+}
+html body footer .top .center {
+  width: 1400px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+html body footer .top .center .brand {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+  position: relative;
+}
+html body footer .top .center .brand > .title {
+  color: #f4d6a1;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+html body footer .top .center .brand > div {
+  margin: 30px 15px 0;
+}
+html body footer .top .center .brand > div.net {
+  width: 90px;
+  height: 46px;
+}
+html body footer .top .center .brand > div.sa {
+  width: 100px;
+  height: 35px;
+}
+html body footer .top .center .brand > div.dg {
+  width: 74px;
+  height: 37px;
+}
+html body footer .top .center .brand > div.gh {
+  width: 56px;
+  height: 39px;
+}
+html body footer .top .center .brand > div.og {
+  width: 50px;
+  height: 43px;
+}
+html body footer .top .center .brand > div.sp {
+  width: 120px;
+  height: 35px;
+}
+html body footer .top .center .brand > div.jili {
+  width: 71px;
+  height: 29px;
+}
+html body footer .top .center .brand > div.elk {
+  width: 92px;
+  height: 36px;
+}
+html body footer .top .center .brand > div.bp {
+  width: 137px;
+  height: 28px;
+}
+html body footer .top .center .brand > div.evo {
+  width: 132px;
+  height: 26px;
+}
+html body footer .top .center .brand > div.ftp {
+  width: 135px;
+  height: 31px;
+}
+html body footer .top .center .brand > div.bng {
+  width: 98px;
+  height: 29px;
+}
+html body footer .top .center .brand > div.ab {
+  width: 97px;
+  height: 32px;
+}
+html body footer .top .center .brand > div.pls {
+  width: 167px;
+  height: 26px;
+}
+html body footer .top .center .brand > div.rsg {
+  width: 67px;
+  height: 39px;
+}
+html body footer .top .center .brand > div.ag {
+  width: 106px;
+  height: 34px;
+}
+html body footer .top .center .brand > div.tpg {
+  width: 105px;
+  height: 34px;
+}
+html body footer .top .center .brand > div.ely {
+  width: 132px;
+  height: 29px;
+}
+html body footer .top .center .brand > div.qs {
+  width: 107px;
+  height: 26px;
+}
+html body footer .top .center .brand > div.atux {
+  width: 135px;
+  height: 33px;
+}
+html body footer .top .center .brand > div.evoplay {
+  width: 119px;
+  height: 20px;
+}
+html body footer .top .center .brand > div.sport {
+  width: 94px;
+  height: 35px;
+}
+html body footer .top .center .brand > div.pg {
+  width: 122px;
+  height: 30px;
+}
+html body footer .top .center .brand > div.png {
+  width: 112px;
+  height: 31px;
+}
+html body footer .top .center .brand > div.mg {
+  width: 130px;
+  height: 32px;
+}
+html body footer .top .center .brand > div.pp {
+  width: 93px;
+  height: 41px;
+}
+html body footer .top .center .brand > div.redrake {
+  width: 74px;
+  height: 46px;
+}
+html body footer .top .center .brand > div.nolimit {
+  width: 117px;
+  height: 32px;
+}
+html body footer .top .center .brand > div.ifun {
+  width: 121px;
+  height: 35px;
+}
+html body footer .top .center .brand > div.wm {
+  width: 39px;
+  height: 40px;
+}
+html body footer .top .center .brand > div.ygg {
+  width: 129px;
+  height: 33px;
+}
+html body footer .top .center .brand > div.relax {
+  width: 97px;
+  height: 31px;
+}
+html body footer .top .center .brand > div.redtiger {
+  width: 99px;
+  height: 42px;
+}
+html body footer .top .center .listBox {
+  width: 50%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50px 1fr 50px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 50px;
+}
+html body footer .bottom {
+  width: 100%;
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #0f367a;
+}
+html body footer .bottom p {
+  width: 1400px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto;
+}
+html body .filter {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+html body .filter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow {
+  display: none;
+  min-width: 480px;
+  height: auto;
+  overflow: hidden;
+}
+html body .filter .jumpWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow.fgPW .content {
+  height: 80px;
+}
+html body .filter .jumpWindow.fgPW .content input {
+  text-align: center;
+}
+html body .filter .jumpWindow.plsLogin .content {
+  height: 80px;
+}
+html body .filter .jumpWindow.news .content ul {
+  width: 840px;
+  height: 300px;
+  overflow-y: overlay;
+  padding: 15px;
+}
+html body .filter .jumpWindow.news .content ul ol {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.news .content ul ol.display {
+  display: block;
+}
+html body .filter .jumpWindow.news .content ul li {
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .filter .jumpWindow.news .content ul li.typeList {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button {
+  width: auto;
+  height: 100%;
+  position: relative;
+  padding: 0 40px;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button:hover::after, html body .filter .jumpWindow.news .content ul li.typeList button:active::after, html body .filter .jumpWindow.news .content ul li.typeList button.active::after {
+  display: block;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button::after {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+}
+html body .filter .jumpWindow.news .content ul li .text {
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.quickTransfer {
+  width: 480px;
+  height: auto;
+}
+html body .filter .jumpWindow.quickTransfer .content {
+  padding: 40px 40px 15px 40px;
+}
+html body .filter .jumpWindow.quickTransfer .content form {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.quickTransfer .content form label {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 30px 70%;
+  grid-template-columns: 25% 70%;
+  gap: 10px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label i {
+  width: 100%;
+  text-align: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  padding: 5px 0;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button {
+  width: 100%;
+  height: 30px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .checkBtn {
+  width: 100%;
+  height: 40px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+html body .filter .jumpWindow.quickTransfer .btnBox {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.reminder .content, html body .filter .jumpWindow.applied .content {
+  padding: 24px 80px 35px;
+}
+html body .filter .jumpWindow.reminder .content p, html body .filter .jumpWindow.applied .content p {
+  text-align: center;
+}
+html body .filter .jumpWindow.changePhone .content {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.changePhone .content .text {
+  width: 280px;
+  margin-bottom: 20px;
+}
+html body .filter .jumpWindow.changePhone .content label {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePhone .content label:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow.changePhone .content label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.changePhone .content label button {
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .filter .jumpWindow.changePW .content {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.changePW .content label {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePW .content label:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow.changePW .content label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.dealDetail {
+  width: 840px;
+}
+html body .filter .jumpWindow.dealDetail .content {
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+html body .filter .jumpWindow.dealDetail .content .serialNum span {
+  margin-left: 10px;
+}
+html body .filter .jumpWindow.dealDetail .content table tr th,
+html body .filter .jumpWindow.dealDetail .content table tr td {
+  width: auto;
+}
+html body .filter .jumpWindow.pointDetail {
+  width: 480px;
+}
+html body .filter .jumpWindow.pointDetail .content {
+  max-height: 281px;
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table {
+  width: 100%;
+  padding-top: 40px;
+  margin: 0;
+  position: relative;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr:first-child {
+  position: absolute;
+  top: 0;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr th,
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr td {
+  width: 50%;
+}
+html body .filter .jumpWindow.eventWindow {
+  width: 1000px;
+  height: auto;
+}
+html body .filter .jumpWindow.eventWindow .content {
+  width: 100%;
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .filter .jumpWindow.eventWindow .content img {
+  width: 100%;
+  height: 240px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule {
+  width: 100%;
+  height: 260px;
+  margin: 20px 0 0;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p {
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow .title {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html body .filter .jumpWindow .title i {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow .content {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow .content input {
+  width: 280px;
+  height: 42px;
+}
+html body .filter .jumpWindow .content table {
+  margin-top: 20px;
+}
+html body .filter .jumpWindow .btnBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+html body .filter .jumpWindow .btnBox button {
+  display: block;
+  width: 280px;
+  height: 42px;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow .btnBox .remind {
+  margin-top: 20px;
+}
+html body main {
+  width: 100%;
+  height: auto;
+  padding-top: 120px;
+}
+html body .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}

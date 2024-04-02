@@ -1,0 +1,138 @@
+header .top .logo {
+    width: 100px;
+    height: 100%;
+    display: flex ;
+    align-items: center;
+    justify-items: center;
+
+    &::before {
+        content: "LOGO";
+        color: map-get($main-color,primary);
+        font-size: 30px;
+        margin: auto;
+    }
+
+    &>img {
+        width: 100%;
+        height: 100%;
+        object-fit: 100%;
+    }
+}
+
+.mainWrap {
+    background: url('../images/bg.png') no-repeat top center;
+    background-size: cover;
+}
+
+//footer
+footer .twitter {
+    background: url('../images/icon/svg/twitter.svg') no-repeat;
+    background-size: contain;
+}
+footer .star {
+    background: url('../images/icon/mainWrap_star.png') no-repeat;
+    background-size: contain;
+}
+footer .ag {
+    background: url('../images/partner/footer_partner/ag.png') no-repeat center;
+}
+footer .sa {
+    background: url('../images/partner/footer_partner/sa.png') no-repeat center;
+}
+footer .dg {
+    background: url('../images/partner/footer_partner/dg.png') no-repeat center;
+}
+footer .tpg {
+    background: url('../images/partner/footer_partner/tpg.png') no-repeat center;
+}
+footer .og {
+    background: url('../images/partner/footer_partner/og.png') no-repeat center;
+}
+footer .sp {
+    background: url('../images/partner/footer_partner/sp.png') no-repeat center;
+}
+footer .mg {
+    background: url('../images/partner/footer_partner/mg.png') no-repeat center;
+}
+footer .pp {
+    background: url('../images/partner/footer_partner/pp.png') no-repeat center;
+}
+footer .gh {
+    background: url('../images/partner/footer_partner/gh.png') no-repeat center;
+}
+footer .elk {
+    background: url('../images/partner/footer_partner/elk.png') no-repeat center;
+}
+footer .ftp {
+    background: url('../images/partner/footer_partner/ftp.png') no-repeat center;
+}
+footer .pg {
+    background: url('../images/partner/footer_partner/pg.png') no-repeat center;
+}
+footer .bng {
+    background: url('../images/partner/footer_partner/bng.png') no-repeat center;
+}
+footer .ab {
+    background: url('../images/partner/footer_partner/ab.png') no-repeat center;
+}
+footer .pls {
+    background: url('../images/partner/footer_partner/pls.png') no-repeat center;
+}
+footer .rsg {
+    background: url('../images/partner/footer_partner/rsg.png') no-repeat center;
+}
+footer .bp {
+    background: url('../images/partner/footer_partner/bp.png') no-repeat center;
+}
+footer .redtiger {
+    background: url('../images/partner/footer_partner/redtiger.png') no-repeat center;
+}
+footer .ifun {
+    background: url('../images/partner/footer_partner/ifun.png') no-repeat center;
+}
+footer .redrake {
+    background: url('../images/partner/footer_partner/redrake.png') no-repeat center;
+}
+footer .ely {
+    background: url('../images/partner/footer_partner/ely.png') no-repeat center;
+}
+footer .atux {
+    background: url('../images/partner/footer_partner/atux.png') no-repeat center;
+}
+footer .evoplay {
+    background: url('../images/partner/footer_partner/evoplay.png') no-repeat center;
+}
+footer .sport {
+    background: url('../images/partner/footer_partner/sport.png') no-repeat center;
+}
+footer .png {
+    background: url('../images/partner/footer_partner/png.png') no-repeat center;
+}
+footer .relax {
+    background: url('../images/partner/footer_partner/relax.png') no-repeat center;
+}
+footer .wm {
+    background: url('../images/partner/footer_partner/wm.png') no-repeat center;
+}
+footer .ygg {
+    background: url('../images/partner/footer_partner/ygg.png') no-repeat center;
+}
+footer .net {
+    background: url('../images/partner/footer_partner/net.png') no-repeat center;
+}
+footer .jili {
+    background: url('../images/partner/footer_partner/jili.png') no-repeat center;
+}
+footer .nolimit {
+    background: url('../images/partner/footer_partner/nolimit.png') no-repeat center;
+}
+footer .evo {
+    background: url('../images/partner/footer_partner/evo.png') no-repeat center;
+}
+footer .qs {
+    background: url('../images/partner/footer_partner/qs.png') no-repeat center;
+}
+footer .link::before {
+    background: url('../images/GC-icon.png') no-repeat center;
+    background-size: contain;
+}
