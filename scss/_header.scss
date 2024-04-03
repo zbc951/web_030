@@ -32,6 +32,7 @@ header {
                 li {
                     width: auto;
                     height: 100%;
+                    display: flex;
 
                     //帳號密碼
                     form {
@@ -43,7 +44,7 @@ header {
                         padding: 0 20px;
 
                         label {
-                            width: 150px;
+                            width: 180px;
                             height: 30px;
                             display: flex;
                             align-items: center;
@@ -53,7 +54,13 @@ header {
                             input {
                                 width: 100%;
                                 height: 100%;
+                                @include input01;
                                 background: none;
+
+                                &::placeholder {
+                                    color: map-get($main-color , primary);
+                                    font-size: 16px;
+                                }
                             }
 
                             i {
@@ -78,6 +85,7 @@ header {
                             &.registerBtn {
                                 @include btn;
                                 font-size: 16px;
+                                border: 1px solid map-get($border, main_02);
 
                                 i {
                                     margin: 0 5px -2px 0;
@@ -195,24 +203,41 @@ header {
             //語言列
             .lang {
                 width: auto;
-                height: 100%;
+                height: 40px;
                 background: none;
                 display: flex;
                 align-items: center;
+                border: 1px solid map-get($border, main_02);
+                border-radius: 5px;
+                margin: auto 0;
                 position: relative;
+
+                &::before {
+                    content: "";
+                    width: 1px;
+                    height: 72%;
+                    background: map-get($border, main_02);
+                    position: absolute;
+                    right: 30px;
+                }
 
                 select {
                     width: auto;
                     height: 100%;
                     background: none;
-                    padding: 0 35px 0 20px;
+                    color: map-get($font, font02);
+                    text-align: center;
+                    padding: 0 46px 0 17px;
                     margin-bottom:2px;
                     cursor: pointer;
+                    position: relative;
                 }
 
                 i {
+                    color: map-get($font, font02);
+                    font-size: 13px;
                     position: absolute;
-                    right: 15px;
+                    right: 9px;
                 }
             }
         }

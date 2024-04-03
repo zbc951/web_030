@@ -6,21 +6,26 @@ $main-color: (
 
 //漸層
 $linear: (
-    primary: linear-gradient(0deg, #bc9c64 4%, #f3d197 93%)
-);
+    primary: linear-gradient(to top, #bc9c64 4%, #f3d197 93%),
+    linear01: linear-gradient(to bottom, #0f46a7 4%, #0f377c 93%)
+    );
 
 $border: (
     main_01: #ffffff,
-    main_02: #ffffff
+    main_02: #daaf6d
 );
 
 $font: (
     font01: #ffffff,
-    font02: #f4d6a1
+    font02: #daaf6d,
+    font03: #a98f73,
 );
 
 @mixin input01 {
+    height: 42px;
+    border-radius: 5px;
     border: 1px solid #daaf6d;
+    padding: 0 15px;
 }
 
 @mixin btn {
@@ -32,6 +37,88 @@ $font: (
     &.main_blue {
         background: linear-gradient(to bottom, #0f45a2 4%, map-get($main-color, primary) 100%);
         color: #ffffff;
+    }
+
+    &.main_gold {
+        background:  map-get($linear, primary);
+        color: #ffffff;
+    }
+    &.main_gray {
+        background: linear-gradient(to bottom, #ffffff 4%, #ececec 100%);
+        border: 1px solid map-get($border, main_02);
+    }
+}
+
+@mixin marquee {
+    background: map-get($main-color, sub);
+    // box-shadow: inset 15px 21px 35px -28px #0000004b;
+    display: flex;
+    margin: auto;
+    filter: drop-shadow(0px 0px 1px map-get($border, main_02));
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 50px 30px 0 0;
+        border-color: map-get($main-color, sub) transparent transparent transparent ;
+        position: absolute;
+        right: -30px;
+    }
+
+    .title {
+        width: 160px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background: map-get($linear, linear01);
+        font-size: 16px;
+        font-weight: bold;
+        transform: skewX(26deg);
+        position: absolute;
+        left: -11px;
+        z-index: 10;
+
+        p {
+            background: map-get($linear , primary);
+            background-clip: text;
+            color: transparent;
+            font-size: 19px;
+            font-weight: bold;
+            transform: skewX(-26deg);
+        }
+    }
+
+    .marquee {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        p {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+            white-space: nowrap;
+            color: map-get($main-color, primary);
+            font-size: 14px;
+            font-weight: bold;
+            padding-left: 100%;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate(0%);
+            }
+
+            100% {
+                transform: translate(-100%);
+            }
+        }
     }
 }
 

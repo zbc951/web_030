@@ -334,6 +334,9 @@ html body header .top .center .UnLoginBox li,
 html body header .bottom .center .UnLoginBox li {
   width: auto;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 html body header .top .center .UnLoginBox li form,
 html body header .bottom .center .UnLoginBox li form {
@@ -352,7 +355,7 @@ html body header .bottom .center .UnLoginBox li form {
 }
 html body header .top .center .UnLoginBox li form label,
 html body header .bottom .center .UnLoginBox li form label {
-  width: 150px;
+  width: 180px;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,7 +370,32 @@ html body header .top .center .UnLoginBox li form label input,
 html body header .bottom .center .UnLoginBox li form label input {
   width: 100%;
   height: 100%;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid #daaf6d;
+  padding: 0 15px;
   background: none;
+}
+html body header .top .center .UnLoginBox li form label input::-webkit-input-placeholder, html body header .bottom .center .UnLoginBox li form label input::-webkit-input-placeholder {
+  color: #0f367a;
+  font-size: 16px;
+}
+html body header .top .center .UnLoginBox li form label input::-moz-placeholder, html body header .bottom .center .UnLoginBox li form label input::-moz-placeholder {
+  color: #0f367a;
+  font-size: 16px;
+}
+html body header .top .center .UnLoginBox li form label input:-ms-input-placeholder, html body header .bottom .center .UnLoginBox li form label input:-ms-input-placeholder {
+  color: #0f367a;
+  font-size: 16px;
+}
+html body header .top .center .UnLoginBox li form label input::-ms-input-placeholder, html body header .bottom .center .UnLoginBox li form label input::-ms-input-placeholder {
+  color: #0f367a;
+  font-size: 16px;
+}
+html body header .top .center .UnLoginBox li form label input::placeholder,
+html body header .bottom .center .UnLoginBox li form label input::placeholder {
+  color: #0f367a;
+  font-size: 16px;
 }
 html body header .top .center .UnLoginBox li form label i,
 html body header .bottom .center .UnLoginBox li form label i {
@@ -410,6 +438,18 @@ html body header .bottom .center .UnLoginBox li form a.loginBtn.main_blue {
   background: linear-gradient(to bottom, #0f45a2 4%, #0f367a 100%);
   color: #ffffff;
 }
+html body header .top .center .UnLoginBox li form a.loginBtn.main_gold,
+html body header .bottom .center .UnLoginBox li form a.loginBtn.main_gold {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  color: #ffffff;
+}
+html body header .top .center .UnLoginBox li form a.loginBtn.main_gray,
+html body header .bottom .center .UnLoginBox li form a.loginBtn.main_gray {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #ffffff), to(#ececec));
+  background: linear-gradient(to bottom, #ffffff 4%, #ececec 100%);
+  border: 1px solid #daaf6d;
+}
 html body header .top .center .UnLoginBox li form a.registerBtn,
 html body header .bottom .center .UnLoginBox li form a.registerBtn {
   display: -webkit-box;
@@ -423,12 +463,25 @@ html body header .bottom .center .UnLoginBox li form a.registerBtn {
           justify-content: center;
   border-radius: 5px;
   font-size: 16px;
+  border: 1px solid #daaf6d;
 }
 html body header .top .center .UnLoginBox li form a.registerBtn.main_blue,
 html body header .bottom .center .UnLoginBox li form a.registerBtn.main_blue {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #0f45a2), to(#0f367a));
   background: linear-gradient(to bottom, #0f45a2 4%, #0f367a 100%);
   color: #ffffff;
+}
+html body header .top .center .UnLoginBox li form a.registerBtn.main_gold,
+html body header .bottom .center .UnLoginBox li form a.registerBtn.main_gold {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  color: #ffffff;
+}
+html body header .top .center .UnLoginBox li form a.registerBtn.main_gray,
+html body header .bottom .center .UnLoginBox li form a.registerBtn.main_gray {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #ffffff), to(#ececec));
+  background: linear-gradient(to bottom, #ffffff 4%, #ececec 100%);
+  border: 1px solid #daaf6d;
 }
 html body header .top .center .UnLoginBox li form a.registerBtn i,
 html body header .bottom .center .UnLoginBox li form a.registerBtn i {
@@ -563,7 +616,7 @@ html body header .bottom .center .loginBox li .transferInfo li {
 html body header .top .center .lang,
 html body header .bottom .center .lang {
   width: auto;
-  height: 100%;
+  height: 40px;
   background: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,27 +624,44 @@ html body header .bottom .center .lang {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid #daaf6d;
+  border-radius: 5px;
+  margin: auto 0;
   position: relative;
+}
+html body header .top .center .lang::before,
+html body header .bottom .center .lang::before {
+  content: "";
+  width: 1px;
+  height: 72%;
+  background: #daaf6d;
+  position: absolute;
+  right: 30px;
 }
 html body header .top .center .lang select,
 html body header .bottom .center .lang select {
   width: auto;
   height: 100%;
   background: none;
-  padding: 0 35px 0 20px;
+  color: #daaf6d;
+  text-align: center;
+  padding: 0 46px 0 17px;
   margin-bottom: 2px;
   cursor: pointer;
+  position: relative;
 }
 html body header .top .center .lang i,
 html body header .bottom .center .lang i {
+  color: #daaf6d;
+  font-size: 13px;
   position: absolute;
-  right: 15px;
+  right: 9px;
 }
 html body header .top.bottom,
 html body header .bottom.bottom {
   height: 50px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
-  background: linear-gradient(0deg, #bc9c64 4%, #f3d197 93%);
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
 }
 html body header .top.bottom .center,
 html body header .bottom.bottom .center {
@@ -777,7 +847,9 @@ html body header .downList ul .fa-solid.fa-chevron-right.active {
 }
 html body .mainWrap {
   width: 100%;
+  min-width: 1400px;
   height: 921px;
+  padding: 20px 0 0;
 }
 html body .mainWrap .center {
   width: 1400px;
@@ -785,31 +857,29 @@ html body .mainWrap .center {
   margin: 0 auto;
 }
 html body .mainWrap .center .marqueeWrap {
-  width: 100%;
+  width: 60%;
   height: 50px;
-}
-html body .mainWrap .center .typeList {
-  width: 100%;
-  height: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px 20px;
-  padding: 60px 0;
-}
-html body .mainWrap .center .typeList .gameBlock {
-  width: 100%;
-  height: auto;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-filter: drop-shadow(0px 0px 1px #daaf6d);
+          filter: drop-shadow(0px 0px 1px #daaf6d);
   position: relative;
-  cursor: pointer;
 }
-html body .mainWrap .center .typeList .gameBlock p {
-  text-align: center;
-  margin-top: 15px;
+html body .mainWrap .center .marqueeWrap::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 30px 0 0;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  right: -30px;
 }
-html body .mainWrap .center .typeList .gameBlock .maintainBox {
-  width: 100%;
+html body .mainWrap .center .marqueeWrap .title {
+  width: 160px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,17 +890,194 @@ html body .mainWrap .center .typeList .gameBlock .maintainBox {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #0f46a7), color-stop(93%, #0f377c));
+  background: linear-gradient(to bottom, #0f46a7 4%, #0f377c 93%);
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transform: skewX(26deg);
+          transform: skewX(26deg);
+  position: absolute;
+  left: -11px;
+  z-index: 10;
+}
+html body .mainWrap .center .marqueeWrap .title p {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 19px;
+  font-weight: bold;
+  -webkit-transform: skewX(-26deg);
+          transform: skewX(-26deg);
+}
+html body .mainWrap .center .marqueeWrap .marquee {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+html body .mainWrap .center .marqueeWrap .marquee p {
+  display: inline-block;
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
+  white-space: nowrap;
+  color: #0f367a;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 100%;
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  100% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  100% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+html body .mainWrap .center .typeList {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 24.3% 13px 49.5% 13px 24.4%;
+  grid-template-columns: 24.3% 49.5% 24.4%;
+  -ms-grid-rows: 395px 15px 395px;
+  grid-template-rows: repeat(2, 395px);
+  gap: 15px 13px;
+  padding: 18px 0;
+}
+html body .mainWrap .center .typeList > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+html body .mainWrap .center .typeList > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+html body .mainWrap .center .typeList > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+html body .mainWrap .center .typeList > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+html body .mainWrap .center .typeList > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+html body .mainWrap .center .typeList > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+html body .mainWrap .center .typeList .gameBlock {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: inset 0px 0px 1px 1px #daaf6d;
+          box-shadow: inset 0px 0px 1px 1px #daaf6d;
+  cursor: pointer;
+}
+html body .mainWrap .center .typeList .gameBlock.board {
+  height: 582px;
+  -webkit-clip-path: polygon(0 0, 100% 32%, 100% 99%, 0 63%);
+          clip-path: polygon(0 0, 100% 32%, 100% 99%, 0 63%);
+  margin-top: 21px;
+}
+html body .mainWrap .center .typeList .gameBlock.slot > .text {
+  position: absolute !important;
+  left: 176px !important;
+}
+html body .mainWrap .center .typeList .gameBlock.fish {
+  height: 582px;
+  margin-top: 21px;
+}
+html body .mainWrap .center .typeList .gameBlock.fish > .text {
+  position: absolute !important;
+  right: 0 !important;
+}
+html body .mainWrap .center .typeList .gameBlock > img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 10;
-  cursor: not-allowed;
+  z-index: 1;
 }
-html body .mainWrap .center .typeList .gameBlock .maintainBox p {
-  text-align: center;
+html body .mainWrap .center .typeList .gameBlock > .text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  background: #0f367a;
+  position: relative;
+  z-index: 2;
 }
-html body .mainWrap .center .typeList .gameBlock .maintainBox p.title {
-  margin-bottom: 30px;
+html body .mainWrap .center .typeList .gameBlock > .text p {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: end;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding: 30px 5px 20px;
+}
+html body .mainWrap .center .typeList > .center_group {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  width: 100%;
+  height: 591px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -196px;
+}
+html body .mainWrap .center .typeList > .center_group > .gameBlock {
+  width: 49%;
+  height: 100%;
+}
+html body .mainWrap .center .typeList > .center_group > .gameBlock > .text {
+  position: absolute !important;
+  right: 0 !important;
+}
+html body .mainWrap .center .typeList > .center_group > .gameBlock.live > .text {
+  left: 0 !important;
+}
+html body .mainWrap .center .typeList > .center_group > .gameBlock > img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 html body .swiper {
   width: 100%;
@@ -881,6 +1128,7 @@ html body .swiper .swiper-button-next {
 html body footer {
   width: 100%;
   height: auto;
+  border-top: 1px solid #daaf6d;
 }
 html body footer .top {
   width: auto;
@@ -908,21 +1156,21 @@ html body footer .top .center {
   margin: 0 auto;
 }
 html body footer .top .center .brand {
-  width: 50%;
+  width: 53%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 35px 0;
   position: relative;
 }
 html body footer .top .center .brand > .title {
-  color: #f4d6a1;
+  color: #daaf6d;
   font-weight: bold;
   position: absolute;
-  top: 0;
+  top: -8px;
   left: 20px;
 }
 html body footer .top .center .brand > div {
@@ -1061,13 +1309,155 @@ html body footer .top .center .brand > div.redtiger {
   height: 42px;
 }
 html body footer .top .center .listBox {
-  width: 50%;
+  width: 41%;
   height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 50px 1fr 50px 1fr;
   grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 180px 20px 105px 20px 30px;
+  grid-template-rows: 180px 105px 30px;
   gap: 20px 50px;
+  padding: 44px 0 0;
+}
+html body footer .top .center .listBox > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+html body footer .top .center .listBox > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+html body footer .top .center .listBox > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+html body footer .top .center .listBox > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+html body footer .top .center .listBox > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+html body footer .top .center .listBox > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+html body footer .top .center .listBox > *:nth-child(7) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+html body footer .top .center .listBox > *:nth-child(8) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+html body footer .top .center .listBox > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+html body footer .top .center .listBox > .list > .title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #daaf6d;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 0 5px;
+  border-bottom: 1px solid;
+}
+html body footer .top .center .listBox > .list > ul {
+  margin: 25px 0 0;
+}
+html body footer .top .center .listBox > .list > ul > li {
+  color: #a98f73;
+  font-size: 15px;
+  margin: 25px 0;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+html body footer .top .center .listBox > .list > ul > li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #daaf6d;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  opacity: 0;
+}
+html body footer .top .center .listBox > .list > ul > li:hover::before, html body footer .top .center .listBox > .list > ul > li:active::before, html body footer .top .center .listBox > .list > ul > li.active::before {
+  display: block;
+  opacity: 1;
+}
+html body footer .top .center .listBox > .list > ul > li:hover p, html body footer .top .center .listBox > .list > ul > li:active p, html body footer .top .center .listBox > .list > ul > li.active p {
+  color: #daaf6d;
+  font-weight: bold;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+html body footer .top .center .listBox > .list:nth-of-type(2), html body footer .top .center .listBox > .list:nth-of-type(3) {
+  grid-row-start: span 2;
+}
+html body footer .top .center .listBox > .hrefGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-column-start: span 3;
+}
+html body footer .top .center .listBox > .hrefGroup > button:nth-of-type(1), html body footer .top .center .listBox > .hrefGroup > button:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  width: 205px;
+  height: 52px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+html body footer .top .center .listBox > .hrefGroup > button:nth-of-type(1).main_blue, html body footer .top .center .listBox > .hrefGroup > button:nth-of-type(2).main_blue {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #0f45a2), to(#0f367a));
+  background: linear-gradient(to bottom, #0f45a2 4%, #0f367a 100%);
+  color: #ffffff;
+}
+html body footer .top .center .listBox > .hrefGroup > button:nth-of-type(1).main_gold, html body footer .top .center .listBox > .hrefGroup > button:nth-of-type(2).main_gold {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #bc9c64), color-stop(93%, #f3d197));
+  background: linear-gradient(to top, #bc9c64 4%, #f3d197 93%);
+  color: #ffffff;
+}
+html body footer .top .center .listBox > .hrefGroup > button:nth-of-type(1).main_gray, html body footer .top .center .listBox > .hrefGroup > button:nth-of-type(2).main_gray {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #ffffff), to(#ececec));
+  background: linear-gradient(to bottom, #ffffff 4%, #ececec 100%);
+  border: 1px solid #daaf6d;
+}
+html body footer .top .center .listBox > .hrefGroup > button:nth-of-type(3) {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 50px;
+  overflow: hidden;
+}
+html body footer .top .center .listBox > .hrefGroup > button:nth-of-type(3) i {
+  color: #ffffff;
+  font-size: 26px;
+  margin: 0 0 0 1px;
 }
 html body footer .bottom {
   width: 100%;
