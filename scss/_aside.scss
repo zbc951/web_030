@@ -1,0 +1,28 @@
+aside {
+    position: absolute;
+
+    &.goTop {
+        width: 55px;
+        height: 66px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: map-get($linear , primary);
+        clip-path: polygon(50% 1%, 100% 28%, 100% 74%, 50% 100%, 0 74%, 0 28%);
+        cursor: pointer;
+        bottom: 590px;
+        right: 5px;
+
+        i,
+        p {
+            color: map-get($font, font01);
+            font-size: 14px;
+            margin: 5px 0 0;
+        }
+
+        i {
+            font-size: 18px;
+        }
+    }
+}

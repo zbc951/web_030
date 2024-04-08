@@ -110,6 +110,10 @@ $(function(){
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
         slidesPerView: 1,
         breakpoints: {
             1000: {
@@ -120,10 +124,27 @@ $(function(){
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-          },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
+        }
     });
+})
+
+//goTop
+$(function(){
+	$(window).scroll(function () {
+        var scrollVal = $(this).scrollTop();
+        if(scrollVal > 0){
+            $(".goTop")
+            .addClass("display")
+        } else{
+            $(".goTop")
+            .removeClass("display");
+        };
+	})
+
+    $(".goTop").click(function(){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //各瀏覽器相容性
+        $body.delay('0').animate({
+            scrollTop: 0
+        },500)
+    })
 })

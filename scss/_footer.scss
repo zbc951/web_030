@@ -276,18 +276,30 @@ footer {
 
     .bottom {
         width: 100%;
-        height: 85px;
+        height: 90px;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         background: map-get($main-color, primary);
+        padding: 20px 0 0;
+        position: relative;
 
         p {
             width: 1400px;
             text-align: center;
-            line-height: 30px;
-            margin: 0 auto;
+            background: map-get($linear, primary);
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
         }
+        
+        li {
+            margin: 0 10px;
+        }
+        
     }
 }

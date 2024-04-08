@@ -1,16 +1,70 @@
 .swiper {
     width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
 
     .swiper-wrapper {
        width: 100%;
-       height: auto;
+       height: 100%;
+       display: flex;
        max-height: 500px;
 
         .swiper-slide {
             width: 100%;
-            height: auto;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                margin: 0 auto;
+                position: absolute;
+                z-index: 1;
+            }
         }
     }
+
+    .swiper-pagination {
+        width: 300px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .swiper-pagination-bullet {
+        width: 0;
+        height: 0;
+        background: transparent;
+        border-radius: 0;
+        border-style: solid;
+        opacity: 1;
+        margin: 0 3px;
+
+        &:nth-of-type(odd) {
+            border-width: 15px 10px 0 10px;
+            border-color: map-get($border, main_01) transparent transparent transparent;
+
+            &.swiper-pagination-bullet-active {
+                border-color: map-get($border, main_02) transparent transparent transparent;
+            }
+        }
+
+        &:nth-of-type(even) {
+            border-width:  0 10px 15px 10px;
+            border-color: transparent transparent map-get($border, main_01) transparent;
+
+            &.swiper-pagination-bullet-active {
+                border-color: transparent transparent map-get($border, main_02) transparent;
+            }
+        }
+    }
+
     
     .swiper-button-prev,
     .swiper-button-next {
@@ -33,6 +87,7 @@
         }
 
         i {
+            display: none;
             position: absolute;
             left: 50%;
             top: 50%;

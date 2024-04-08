@@ -12,13 +12,13 @@ html {
         // @import "./_help.scss";
         @import "./_banner.scss";
         @import "./_footer.scss";
-        // @import "./_aside.scss";
+        @import "./_aside.scss";
         @import "./_jumpWindow.scss";
 
         main {
             width: 100%;
             height: auto;
-            padding-top: 120px;
+            padding-top: 130px;
         }
 
         //大背景

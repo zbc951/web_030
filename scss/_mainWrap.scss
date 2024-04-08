@@ -32,29 +32,29 @@
                 height: auto;
                 overflow: hidden;
                 position: relative;
-                box-shadow: inset 0px 0px 1px 1px map-get($border , main_02);
+                box-shadow: inset 750px 1px 1px 1px map-get($border , main_02);
                 cursor: pointer;
 
                 &.board {
                     height: 582px;
-                    clip-path: polygon(0 0, 100% 32%, 100% 99%, 0 63%);
+                    clip-path: polygon(0 0, 100% 33%, 100% 100%, 0 67%);
                     margin-top: 21px;
                 }
 
                 &.slot {
-                    // height: 582px;
-                    // clip-path: polygon(0 0, 100% 32%, 100% 99%, 0 63%);
+                    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
                     
                     &>.text {
                         position: absolute !important;
+                        top: 72px;
                         left: 176px !important;
                     }
                 }
 
                 &.fish{
-                    height: 582px;
-                    // clip-path: polygon(0 0, 100% 32%, 100% 99%, 0 63%);
-                    margin-top: 21px;
+                    height: 590px;
+                    clip-path: polygon(0 33%, 100% 0, 100% 67%, 0 100%);
+                    margin-top: 14px;
 
                     &>.text {
                         position: absolute !important;
@@ -62,13 +62,25 @@
                     }
                 }
 
+                &:hover,&:active {
+                    &>img {
+                        transform: scale(1.3);
+                        filter: brightness(1.1);
+                    }
+
+                    &>.text {
+                        filter: brightness(1.3);
+                    }
+                }
+
                 &>img {
                     width: 100%;
                     height: 100%;
-                    background-size: cover;
+                    background-size: 100%;
                     position: absolute;
                     top: 0;
                     z-index: 1;
+                    transition: all 0.3s;
                 }
 
                 &>.text {
@@ -107,13 +119,22 @@
                     &>.text {
                         position: absolute !important;
                         right: 0 !important;
-                        
                     }
 
                     &.live {
+                        clip-path: polygon(0 33%, 100% 0, 100% 67%, 0 100%);
 
                         &>.text {
+                            top: 174px;
                             left: 0 !important;
+                        }
+                    }
+
+                    &.sport {
+                        clip-path: polygon(0 0, 100% 33%, 100% 100%, 0 67%);
+
+                        &>.text {
+                           top: 174px;
                         }
                     }
 
